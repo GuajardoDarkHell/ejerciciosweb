@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<!--Fig. 4.10: posicionamiento2.html-->
+<!--Posicionamiento relativo de los elementos.-->
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Posicionamiento Relativo</title>
+    <style type="text/css">
+        p {font-size: 1.3em;
+           font-family: Verdana, Arial, sans-serif;
+        }
+        span {color: red;
+              font-size: .6em;
+              height: 1em;
+        }
+        .super {position: relative;
+                top: -1ex;
+        }
+        .sub {position: relative;
+              bottom: -1ex;
+        }
+        .desplizq {position: relative;
+                   left: -1ex;
+        }
+        .desplder {position: relative;
+                   right: -1ex;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <p>
+            <a href="../../index.html">
+                <img src="Imagenes/back.png" width="80"
+                     height="80" alt="vinculos" align="left" />
+            </a>
+            
+            <strong>Regresar</strong>
+            
+        </p>
+    </header>
+    <p>El texto al final de esta oraciòn
+    <span class="super">està en superìndice</span>.</p>
+    <p>El texto al final de esta oraciòn 
+    <span class="sub">està en subìndice</span>.</p>
+    <p>El texto al final de esta oraciòn
+        <span class="desplizq">esta desplazado a la izquierda </span>.</p>
+    <p>El tecto al final de esta oraciòn
+    <span class="desplder">està desplazado a la derecha</span>.</p>
+
+</body>
+</html>

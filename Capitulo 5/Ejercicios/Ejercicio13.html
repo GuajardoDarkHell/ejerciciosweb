@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!--Ejercicio 5.13-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 5.13</title>
+    <style type="text/css">
+        .flexbox
+{
+ width: 600px;
+ height:300px;   
+ display: -webkit-box;
+ -webkit-box-orient: vertical;
+ box-orient: vertical;
+}
+.flexbox > div
+{
+    -webkit-transition: 1s ease-out;
+    transition: 1s ease-out;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    border: 2px solid black;
+    width: 240px;
+    height: 100px;
+    margin: 10px -10px 10px 0px;
+    padding: 20px 20px 20px 20px;
+    box-shadow: 10px 10px 10px dimgrey;
+}
+.flexbox > div:nth-child(1){ background-color: yellowgreen;}
+.flexbox > div:nth-child(2){ background-color: yellowgreen;}
+.flexbox > div:nth-child(3){ background-color: yellowgreen;}
+.flexbox > div:nth-child(4){ background-color: yellowgreen;}
+
+.flexbox > div:hover {
+    width: 300px; color: white; font-weight: bold;
+}
+.flexbox > div:nth-child(1):hover {background-color: royalblue;}
+.flexbox > div:nth-child(2):hover {background-color: crimson;}
+.flexbox > div:nth-child(3):hover {background-color: crimson;}
+.flexbox > div:nth-child(4):hover {background-color: darkgreen;}
+p {height: 50px; overflow: hidden; font-family: "Rosario";}
+</style>
+</head>
+<body>
+    <header>
+        <p>
+            <a href="../../index.html">
+                <img src="Imagenes/back.png" width="80"
+                     height="80" alt="vinculos" align="left" />
+            </a>
+            
+            <strong>Regresar</strong>
+            
+        </p>
+    </header>
+    <h2>5.13 <em>(MDCF) </em>Modifique el ejemplo de la figura 5.16 para usar una caja flexible vertical</h2>
+    <div class="flexbox">
+        <div><img src="GPP.png" alt="Icono de buena programaciòn">
+            <p>Las buenas pràcticas de programaciòn indican las tècnicas que 
+                le ayudaràn a producir programas màs claros,
+                comprensibles y fàciles de mantener.
+            </p>
+        </div>
+        <div><img src="EPT.png" alt="Icono para prevenir errores">
+        <p>Los tips para prevenir errores contienen sugerencias para exponer errores 
+            y eliminarlos de sus programas; muchos describen aspectos de 
+            programaciòn que evitan que los errores entren siquiera a los programas.
+        </p></div>
+        <div><img src="CPE.png" alt="Icono de error comùn de programaciòn">
+        <p>Los errores comunes de programaciòn señalan los errores que cometen los estudiantes 
+            los estudiantes con frecuencia. Estos errores comunes de programaciòn reducen 
+            la probabilidad de que usted cometa los mismos errores.
+        </p></div>
+        <div><img src="SEO.png" alt="Icono de observaciòn de ingenieria de software">
+        <p>Las observaciones 
+            de ingenierìa de software resaltan los asuntos de arquitectura y diseño 
+            que afectan en la construcciòn de sistemas de software,
+            en especial los sistemas de gran escala.
+        </p></div>
+    </div>
+    
+    
+</body>
+</html>

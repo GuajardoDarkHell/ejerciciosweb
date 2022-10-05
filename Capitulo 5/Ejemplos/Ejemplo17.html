@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<!--Fig 5.18: consultasmedios.html-->
+<!--Uso de consultas de medios para volver a dar un formato a una pàgina con base en la anchura del dispositivo -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultas de Medios</title>
+    <style type="text/css">
+        p
+        {
+            margin: 0.9em 0em;
+        }
+        /*estilos para smathphones con anchuras de pantalla de 480px o menos*/
+        @media handheld and (max-width: 480px),
+        screen and (max-device-width: 480px),
+        screen and (max-width: 480px)
+        {
+            div{
+                -webkit-column-count: 1;
+                column-count: 1;
+            }
+        }
+        /*estilos para dispositivos con anchuras de pantalla de 481px a 1024px*/
+        @media only screen and(min-width: 481px) and
+        (max-width: 1024px)
+        {
+            div{
+                -webkit-column-count: 2;
+                column-count: 2;
+                -webkit-column-gap: 30px;
+                column-gap: 30px;
+                -webkit-columne-rule: 1px outset black;
+                column-rule: 1px outset black;
+            }
+        }
+        /*estilos para dispositivos con anchuras de pantalla de 1025px o mayor */
+        @media only screen and (min-width: 1025px)
+        {
+            div{
+                -webkit-column-count: 3;
+                column-count: 3;
+                -webkit-column-gap: 30px;
+                column-gap: 30px;
+                -webkit-column-rule: 1px outset black;
+                column-rule: 1px outset black;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Computadoras, hardware y software</h1>
+    </header>
+    <div>
+        <p>Una computadora es un dispsitivo que puede realizar càlculos y tomar
+             decisiones lògicas con mucha màs rapidez que los humanos.
+             Muchas de las computadoras personales de la actualidad pueden realizarmiles
+             millones de
+             càlculos en un segundo màs de lo que un humano puede realizar
+             durante toda su vida. Las supercomputadoras ya se encuentran realizando miles
+             de billones (trillones) de instrucciones por segundo. Para poner
+             esto en perspectiva, una computadora de un trillòn de instrucciones por segundo
+             puede realizar en un segundo màs de 100,000
+             càlculos para cada persona en el planeta. Y estos
+             "lìmites superiores" aumentan con rapidez.</p>
+             <p>Las computadoras procesan datos bajo el control de conjuntos de
+                instrucciones llamadas programas de computadora. Estos programas guìan
+                a la computadora por conjuntos ordenados de acciones especificadas por
+                personas llamadas programadores de computadora. Los programas que se ejecutan en una
+                computadora se conocen como software. En este libro usted
+                aprenderà sobre la metodologìa de programaciòn clave de
+                la actualidad que
+                mejora la productividad del programador, con l o cual se reducen los costos de
+                desarrollo de
+                software programaciòn orientada a objetos.</p>
+                <p>una computadora consiste de diversos dispositivos conocidos como hardware
+                    (por ejemplo: el teclado, pantalla, ratòn, discos duros, memoria, DVD
+                    y unidades de procesamiento). Los costos de las compiutadoras desminuyeb en forma 
+                    dramatìca, debido a los ràpidos desarrollos de tecnologicos de 
+                    hardware y software. Las computadoras que podrian haber llenado salones
+                    extensos y costar millones de dòlares hace unas dècadas a hora se 
+                    inscriben en chips de silicio màs chicos que una uña, que cuestan
+                    tal vez unos còlares. Por ironìa el silicio es uno de los 
+                    materiales màs abundantes es un ingrediente en la arena 
+                    ordinaria. La tecnologìa de chips de silicio ha hecho la computaciòn 
+                    tan economica 
+                    que hay màs de mil millones de computadoras de propòsito general en uso 
+                    en todo el mundo, y se espera que esta cifra se duplique en los pròximos
+                    años.
+                </p>
+                <p>
+                    Los chips de computadora (microprocesadores) controlan innumerables dispositivos.
+                    Estos sistemas incrustados incluyen frenos antlbloqueo en los autos,
+                    sistemas de navegaciòn, electrodomèsticos ineligentes , sistemas de
+                    seguridad en el hogar, telèfonos celulares y Smartphones, robots, inter
+                    secciones
+                    de trafico inteligentes , sistemas para evitar colisiones, controladores de
+                    videojuegos y màs. La Inmensa mayoria de los microprocesadores que
+                    se producen cada año se incrustan en dispsitivos que no son computadoras
+                    de propòsito general.
+                </p>
+                <footer>
+                    <em>&copy; 2012 por pearson Education, Inc.
+                        Todos los derechos reservados. </em>
+                </footer>
+    </div>
+    
+</body>
+</html>

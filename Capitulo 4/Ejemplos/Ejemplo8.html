@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<!--fig. 4,12: anchura.html-->
+<!--dimensiones de los elementos de alineación del texto.-->
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Dimensiones del cuadro</title>
+    <style type="text/css">
+        p {background-color: lightskyblue;
+           margin-bottom: .5em;
+           font-family: Arial, helvetico, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <p>
+            <a href="../../index.html">
+                <img src="Imagenes/back.png" width="80"
+                     height="80" alt="vinculos" align="left" />
+            </a>
+            
+            <strong>Regresar</strong>
+            
+        </p>
+    </header>
+    <p style="width: 20%;">Éste es un 
+    texto que va dentro de un cuadro, el cual
+    se estira a lo largo del veinte porciento de la anchura de la pantalla.</p>
+    <p style="width: 80%; text-align: center;">
+        Éste es un texto CENTRADO que va dentro de un cuadro,
+        el cual se estira a lo largo de ochenta por ciento 
+        de la anchura de la pantalla. 
+    </p>
+    <p style="width: 20%; height: 150px; overflow: scroll;">
+        Este cuadro solamente tiene el veinte por ciento 
+        de la anchura y una altura fija.
+        ¿ Qué hacemos si se desborda? ¡Ajustamos la propiedad overflow a scroll!
+    </p>
+
+</body>
+</html>

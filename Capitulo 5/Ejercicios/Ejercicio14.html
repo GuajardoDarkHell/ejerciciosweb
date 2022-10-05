@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!--Ejercicio 5.14-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 5.14</title>
+    <style type="text/css">
+        .img-contenedor img
+        {
+            -webkit-transition:all .9s ease; 
+            -moz-transition:all .9s ease; 
+            -o-transition:all .9s ease; 
+            transition:all .9s ease;
+            width:100%;
+        }
+        .img-contenedor:hover img
+        {
+        -webkit-transform:scale(120%);
+        -moz-transform:scale(120%);
+        -o-transform:scale(120%);
+        transform:scale(120%);
+        }
+        .img-contenedor 
+        {
+        width:800px;
+        height:600px;
+        overflow:hidden;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <p>
+            <a href="../../index.html">
+                <img src="Imagenes/back.png" width="80"
+                     height="80" alt="vinculos" align="left" />
+            </a>
+            
+            <strong>Regresar</strong>
+            
+        </p>
+    </header>
+    <h2>5.15 <em>(Transformación con :hover) </em>Cree un programa de transformación que incluya cuatro imágenes. 
+        Cuando el usuario pase el ratón sobre una imagen, el tamaño de ésta debe aumentar por 20%.</h2>
+
+        <div class="img-contenedor">
+            <img src="Imagenes/paisaje5.png" alt="imagen 1" />
+        </div>
+        <div class="img-contenedor">
+            <img src="Imagenes/paisaje1.png" alt="imagen 2" />
+        </div>
+        <div class="img-contenedor">
+            <img src="Imagenes/paisaje3.png" alt="imagen 3" />
+        </div>
+        <div class="img-contenedor">
+            <img src="Imagenes/paisaje4.png" alt="imagen 4" />
+        </div>
+
+</body>
+</html>

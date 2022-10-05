@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<!--Fig 4.9: posicionamiento.html-->
+<!--Posicionamiento absoluto de elementos-->
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Posicionamiento Absoluto</title>
+    <style type="text/css">
+        .imagen_fondo {position:absolute;
+                       top: 0px;
+                       left: 0px;
+                       z-index: 1;
+        }
+        .imagen_primerplano {position:absolute;
+                             top: 25px;
+                             left: 100px;
+                             z-index: 2;
+        }
+        .texto {position:absolute;
+                top: 25px;
+                left: 100px;
+                z-index: 3;
+                font-size: 20pt;
+                font-family: Tahoma, Geneva, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <p>
+            <a href="../../index.html">
+                <img src="Imagenes/back.png" width="80"
+                     height="80" alt="vinculos" align="left" />
+            </a>
+            
+            <strong>Regresar</strong>
+            
+        </p>
+    </header>
+    <p><img src="imagen_fondo.png" class="imagen_fondo"
+            alt="Primera imagen posicionada "></p>
+    <p><img src="imagen_primerplano.png" class="imagen_primerplano"
+            alt="Segunda imagen posicionada" /></p>
+    <p class="texto">Texto Posicionado</p>
+
+</body>
+</html>

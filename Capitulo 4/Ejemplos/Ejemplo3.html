@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<!--Fig 4.6: avanzada.html-->
+<!-- Herencia en hojas de estilo.-->
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Màs estilos</title>
+    <style type="text/css">
+        body {font-family: Arial, Helvetica, sans-serif;}
+        a.nodec {text-decoration: none;}
+        a:hover {text-decoration: underline;}
+        li em {font-weight: bold;}
+        h1, em {text-decoration: underline;}
+        ul {margin-left: 20px;}
+        ul ul {font-size: .8em; }
+    </style>
+</head>
+<body>
+    <header>
+        <p>
+            <a href="../../index.html">
+                <img src="Imagenes/back.png" width="80"
+                     height="80" alt="vinculos" align="left" />
+            </a>
+            
+            <strong>Regresar</strong>
+            
+        </p>
+    </header>
+    <h1>Lista de compras para el lunes:</h1>
+    <ul>
+        <li>Leche</li>
+        <li>
+            Pan
+            <ul>
+                <li>Pan Blanco</li>
+                <li>Pan de Centeno</li>
+                <li>Pan de Trigo Entero</li>
+            </ul>
+        </li>
+        <li>Zanahoria</li>
+        <li>Yogut</li>
+        <li>Pizza <em>con champiñones</em></li>
+    </ul>
+
+    <p><em>Ir a la</em>
+        <a class="nodec" href="http://www.deitel.com">
+            Tienda de Abarrotes
+        </a>
+    </p>
+</body>
+</html>

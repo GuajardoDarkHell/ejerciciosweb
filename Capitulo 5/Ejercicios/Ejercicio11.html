@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!--Ejercicio 5.11-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 5.11</title>
+    <style type="text/css">
+            .img
+            {
+                position: absolute;
+                left: 0;
+            }
+            .portada:hover .top1
+            {
+                opacity: 0; 
+                -webkit-transition: opacity 3s linear;
+                transition: opacity 3s linear ;
+                
+            }
+            .portada:hover .top2
+            {
+                opacity: 0; 
+                -webkit-transition: opacity 3s linear 4s;
+                transition: opacity 3s linear 4s;
+                
+            }
+            .portada:hover .top3
+            {
+                opacity: 0; 
+                -webkit-transition: opacity 3s linear 8s;
+                transition: opacity 3s linear 8s;
+                
+            }
+            .portada:hover .top4
+            {
+                opacity: 0; 
+                -webkit-transition: opacity 3s linear 12s;
+                transition: opacity 3s linear 12s;
+                
+            }
+
+    </style>
+</head>
+<body>
+    <header>
+        <p>
+            <a href="../../index.html">
+                <img src="Imagenes/back.png" width="80"
+                     height="80" alt="vinculos" align="left" />
+            </a>
+            
+            <strong>Regresar</strong>
+            
+        </p>
+    </header>
+    <h2>5.11 <em>(Fusionar imágenes) </em> Modifique el ejemplo de la figura 5.14 utilizando cinco imágenes. Podría ser interesante probar 
+        con imágenes de usted o de un miembro de su familia en distintas edades o en un paisaje en distintos momentos. 
+        Establezca el valor de transition-duration en 3s y de transition-timing-function en linear.</h2>
+        <div class="portada">
+            <img class="img" src="Imagenes/paisaje1.png" alt="imagen 1">
+            <img class="img top4" src="Imagenes/paisaje2.png" alt="imagen 2">
+            <img class="img top3" src="Imagenes/paisaje3.png" alt="imagen 3">
+            <img class="img top2" src="Imagenes/paisaje4.png" alt="imagen 4">
+            <img class="img top1" src="Imagenes/paisaje5.png" alt="imagen 5">
+        </div>
+    
+</body>
+</html>
